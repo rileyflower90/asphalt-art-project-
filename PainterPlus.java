@@ -1,13 +1,13 @@
 import org.code.neighborhood.*;
 
 /*
- * Creates a PainterPlus
+ * This creates a PainterPlus
  * PainterPlus is a subclass of Painter.
  */
 public class PainterPlus extends Painter {
 
   /*
-   * Turns a PainterPlus object to the right
+   * This turns a PainterPlus object to the right
    * by turning left three times
    */
   public void turnRight() {
@@ -16,7 +16,10 @@ public class PainterPlus extends Painter {
     turnLeft();
   }
 
-
+  /*
+   * This makes the PainterPlus take all the paint
+   * while its on the bucket, the painter takes the paint
+   */
   public void takeAllPaint() {
     while (isOnBucket()) {
       takePaint();
