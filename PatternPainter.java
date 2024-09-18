@@ -2,7 +2,8 @@ import org.code.neighborhood.*;
 
 public class PatternPainter extends PainterPlus {
 
-  //paintRow paints a pattern across an entire row
+  //This PaintRow whileloop paints a pattern across an entire row.
+  //If the painter can move, the painter will paint a square and then keep on going, until the painter can't move anymore.
   public void paintRow(String color) {
     while(canMove()){
       paintPattern(color);
@@ -13,7 +14,7 @@ public class PatternPainter extends PainterPlus {
   }
 
 /*
-This uses paintRow to paint a row, then it turns to the next row
+This uses paintRow to paint a row, and then it turns to the next row
 It then paints a new row
 It repeats this until every row has the pattern
 */
